@@ -15,3 +15,5 @@ function binarySearch(list, item) {
 
     return null;
 }
+
+module.exports = binarySearch;
