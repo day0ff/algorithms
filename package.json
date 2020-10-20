@@ -10,5 +10,8 @@
     "algorithms"
   ],
   "author": "Denis Vershadov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.0"
+  }
 }
