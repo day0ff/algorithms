@@ -8,8 +8,8 @@ test('should sort array ascending', () => {
 });
 
 test('should sort array ascending', () => {
-    const arr = [0, 8, 2, -2, 0, 4, 6];
-    const expectedArray = [-2, 0, 0, 2, 4, 6, 8];
+    const arr = [0, 8, 2, -2, 0, 4, 6, -4];
+    const expectedArray = [-4, -2, 0, 0, 2, 4, 6, 8];
 
     expect(quickSort(arr)).toEqual(expectedArray);
 });
