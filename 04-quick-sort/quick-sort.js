@@ -10,6 +10,3 @@ function quickSort(array){
 }
 
 module.exports = quickSort;
-
-console.log('quickSort');
-console.log(quickSort([122, 17, 64, 77, 1, 122, 1, 54, 99]));
