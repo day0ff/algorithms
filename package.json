@@ -4,7 +4,7 @@
   "description": "algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --no-watchman"
   },
   "keywords": [
     "algorithms"
