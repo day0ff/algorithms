@@ -29,9 +29,9 @@ describe('Queue: ', () => {
 
         test('should add element to the end of queue', () => {
             queue.enqueue(array[0]);
+            expect(queue.peek()).toBe(array[0]);
             queue.enqueue(array[1]);
-            queue.enqueue(array[2]);
-            expect(queue.behind()).toBe(array[2]);
+            expect(queue.peek()).toBe(array[0]);
         });
 
     });
@@ -81,32 +81,6 @@ describe('Queue: ', () => {
             queue.enqueue(array[0]);
             expect(queue.size()).toBe(1);
             queue.peek();
-            expect(queue.size()).toBe(1);
-        });
-
-    });
-
-    describe('behind method - ', () => {
-
-        test('should be defined', () => {
-            expect(queue.behind).toBeDefined();
-        });
-
-        test('should return undefined from empty queue', () => {
-            expect(queue.behind()).toBeUndefined();
-        });
-
-        test('should return last element from queue', () => {
-            queue.enqueue(array[0]);
-            queue.enqueue(array[1]);
-            queue.enqueue(array[2]);
-            expect(queue.behind()).toBe(array[2]);
-        });
-
-        test('should not change size of queue', () => {
-            queue.enqueue(array[0]);
-            expect(queue.size()).toBe(1);
-            queue.behind();
             expect(queue.size()).toBe(1);
         });
 

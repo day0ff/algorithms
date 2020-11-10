@@ -18,10 +18,6 @@ Queue.prototype.peek = function () {
     return !this.isEmpty() ? this.elements[0] : undefined;
 };
 
-Queue.prototype.behind = function () {
-    return !this.isEmpty() ? this.elements[this.elements.length - 1] : undefined;
-};
-
 Queue.prototype.size = function () {
     return this.elements.length;
 };
